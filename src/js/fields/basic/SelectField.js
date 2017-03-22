@@ -227,7 +227,7 @@
 
                 // if emptySelectFirst and nothing currently checked, then pick first item in the value list
                 // set data and visually select it
-                if (Alpaca.isUndefined(self.data) && self.options.emptySelectFirst && self.selectOptions && self.selectOptions.length > 0)
+                if (Alpaca.isEmpty(self.data) && self.options.emptySelectFirst && self.selectOptions && self.selectOptions.length > 0)
                 {
                     self.data = self.selectOptions[0].value;
                 }
